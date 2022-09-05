@@ -1,0 +1,30 @@
+{
+  "name": "react-image-carousel",
+  "version": "1.0.0",
+  "description": "![image](https://user-images.githubusercontent.com/26568721/122760010-421dd980-d2b8-11eb-95b3-5568048a77ee.png)",
+  "keywords": [],
+  "main": "src/index.tsx",
+  "dependencies": {
+    "@types/react": "^18.0.18",
+    "@types/react-dom": "^18.0.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1",
+    "typescript": "^4.8.2",
+    "typescript-react": "^0.1.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "author": "",
+  "license": "ISC"
+}
