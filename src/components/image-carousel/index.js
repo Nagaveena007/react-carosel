@@ -78,13 +78,13 @@ const ImageCarousel = ({ images }) => {
           className="carousel__button carousel__button-left"
           onClick={handleLeftClick}
         >
-          Prev
+          Previous
         </button>
         <button
           className="carousel__button carousel__button-right"
           onClick={handleRightClick}
         >
-          Next
+          Next 
         </button>
       </div>
     </div>
