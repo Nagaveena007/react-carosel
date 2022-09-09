@@ -60,7 +60,9 @@ const ImageCarousel = ({ images }) => {
         style={{ backgroundImage: `url(${selectedImage?.url})` }}
       />
       <div className="carousel">
+        
         <div className="carousel__images">
+        
           {images &&
             images.map((image, idx) => (
               <div
@@ -71,9 +73,11 @@ const ImageCarousel = ({ images }) => {
                   selectedImageIndex === idx && "carousel__image-selected"
                 }`}
                 ref={(el) => (carouselItemsRef.current[idx] = el)}
-              />
+              ></div>
             ))}
+             
         </div>
+
         <button
           className="carousel__button carousel__button-left"
           onClick={handleLeftClick}

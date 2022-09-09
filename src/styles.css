@@ -27,10 +27,12 @@
   display: flex;
   max-width: 100%;
   overflow-x: hidden;
+
 }
 
 .carousel__image-selected {
   border: 3px solid #ffa700 !important;
+  
 }
 
 .carousel__image {
