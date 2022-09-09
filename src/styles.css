@@ -11,12 +11,14 @@
 }
 
 .selected-image {
+  display: flex;
+  justify-content: center;
   width: 100%;
+  margin-bottom: 50px;
+  /*  background-position: center center;
   height: 500px;
-  margin-bottom: 8px;
-  background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
 }
 
 .carousel {

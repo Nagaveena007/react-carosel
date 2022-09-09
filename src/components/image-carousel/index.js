@@ -1,7 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
 
-//export type ImageType = { id: number; url: string };
-
 const ImageCarousel = ({ images }) => {
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
   const [selectedImage, setSelectedImage] = useState();
@@ -57,8 +55,22 @@ const ImageCarousel = ({ images }) => {
       <h2 className="header">Image Carousel</h2>
       <div
         className="selected-image"
-        style={{ backgroundImage: `url(${selectedImage?.url})` }}
-      />
+      >
+        <button
+          className="carousel__button carousel__button-left"
+          onClick={handleLeftClick}
+        >
+          Previous
+        </button>
+       
+        <img src={selectedImage?.url} height="300" width="500" />
+        <button
+          className="carousel__button carousel__button-right"
+          onClick={handleRightClick}
+        >
+          Next 
+        </button>
+      </div>
       <div className="carousel">
         
         <div className="carousel__images">
