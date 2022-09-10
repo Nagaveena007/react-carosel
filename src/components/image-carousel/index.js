@@ -53,6 +53,7 @@ const ImageCarousel = ({ images }) => {
   };
   const moveDot = index => {
     setSelectedImageIndex(index)
+		handleSelectedImageChange(index);
    
 }
   return (
@@ -110,7 +111,7 @@ const ImageCarousel = ({ images }) => {
         </div>
 
         <button
-          className="carousel__button carousel__button-left"
+          className="carousel__button carousel__button-left lower"
           onClick={handleLeftClick}
         >
            <img
@@ -119,7 +120,7 @@ const ImageCarousel = ({ images }) => {
         />
         </button>
         <button
-          className="carousel__button carousel__button-right"
+          className="carousel__button carousel__button-right lower"
           onClick={handleRightClick}
         >
           <img
