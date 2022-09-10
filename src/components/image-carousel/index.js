@@ -1,4 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
+import leftArrow from "../image-carousel/ImageSlider/icons/left-arrow.svg";
+import rightArrow from "../image-carousel/ImageSlider/icons/right-arrow.svg";
 
 const ImageCarousel = ({ images }) => {
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
@@ -59,20 +61,23 @@ const ImageCarousel = ({ images }) => {
       <div
         className="selected-image"
       >
-        <button
-          className="carousel__button carousel__button-left"
-          onClick={handleLeftClick}
-        >
-          Previous
-        </button>
-       
+        <button className="prev btn-slide"
+          onClick={handleLeftClick}>
+        <img
+          className='btn-slide-img'
+        src={leftArrow}
+        />
+       </button>
+        
         <img src={selectedImage?.url} height="300" width="500" />
-        <button
-          className="carousel__button carousel__button-right"
-          onClick={handleRightClick}
-        >
-          Next 
-        </button>
+        
+        <button className="next btn-slide"
+          onClick={handleRightClick}>  
+        <img
+          className='btn-slide-img'
+        src={rightArrow}
+        />
+       </button>
 
         <div className="container-dots">
        {images &&
@@ -108,14 +113,21 @@ const ImageCarousel = ({ images }) => {
           className="carousel__button carousel__button-left"
           onClick={handleLeftClick}
         >
-          Previous
+           <img
+          className='btn-slide-img '
+        src={leftArrow}
+        />
         </button>
         <button
           className="carousel__button carousel__button-right"
           onClick={handleRightClick}
         >
-          Next 
+          <img
+          className='btn-slide-img '
+        src={rightArrow}
+        /> 
         </button>
+
       </div>
     </div>
   );
