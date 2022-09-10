@@ -8,6 +8,7 @@
 
 .carousel-container {
   margin: 20px;
+
 }
 
 .selected-image {
@@ -16,11 +17,7 @@
   width: 100%;
   margin-bottom: 50px;
   position: relative;
-  
-  /*  background-position: center center;
-  height: 500px;
-  background-repeat: no-repeat;
-  background-size: cover; */
+ 
 }
 
 .carousel {
@@ -30,9 +27,20 @@
 .carousel__images {
   display: flex;
   max-width: 100%;
-  overflow-x: hidden;
-
+  overflow-x: scroll;
 }
+
+.carousel__images::-webkit-scrollbar {
+  width: 18px;
+  }
+  /* Track */
+  .carousel__images::-webkit-scrollbar-track {
+  background: transparent;
+  }
+  /* Handle */
+  .carousel__images::-webkit-scrollbar-thumb {
+  background: transparent;
+  }
 
 .carousel__image-selected {
   border: 3px solid #ffa700 !important;

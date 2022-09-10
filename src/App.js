@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import ImageCarousel from "./components/image-carousel";
 import "./styles.css";
-import ImageSlider from "./components/image-carousel/ImageSlider/ImageSlider";
 export default function App() {
   const [images, setImages] = useState();
 
@@ -17,7 +16,6 @@ export default function App() {
   return (
     <div className="App">
       <ImageCarousel images={images} />
-     {/*  <ImageSlider/> */}
     </div>
   );
 }
