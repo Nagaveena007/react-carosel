@@ -49,7 +49,10 @@ const ImageCarousel = ({ images }) => {
       handleSelectedImageChange(newIdx);
     }
   };
-
+  const moveDot = index => {
+    setSelectedImageIndex(index)
+   
+}
   return (
     <div className="carousel-container">
       <h2 className="header">Image Carousel</h2>
@@ -70,6 +73,17 @@ const ImageCarousel = ({ images }) => {
         >
           Next 
         </button>
+
+        <div className="container-dots">
+       {images &&
+       images.map((image, index) => (
+                    <div 
+                    onClick={() => moveDot(index)}
+                    className={selectedImageIndex === index ? "dot active" : "dot"}
+                    ></div>
+                ))}
+            </div>
+
       </div>
       <div className="carousel">
         
