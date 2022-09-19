@@ -29,6 +29,15 @@
   max-width: 100%;
   overflow-x: scroll;
 }
+.carousel__image {
+  margin-right: 10px;
+  height: 150px;
+  min-width: 150px;
+  border: 3px solid #ffa70000;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .carousel__images::-webkit-scrollbar {
   width: 18px;
@@ -47,15 +56,6 @@
   
 }
 
-.carousel__image {
-  margin-right: 10px;
-  height: 150px;
-  min-width: 150px;
-  border: 3px solid #ffa70000;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 .carousel__button {
   position: absolute;
