@@ -98,7 +98,6 @@ console.log(imageLenght,'imageLenght') */
 
       </div>
       <div className="carousel">
-        
         <div 
 				className="carousel__images" 
 				>
